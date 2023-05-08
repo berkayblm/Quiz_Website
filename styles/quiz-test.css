@@ -1,0 +1,75 @@
+
+.card {
+    background: #cbff54;
+    font-family: 'Bruno Ace SC', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding-bottom: 100px;
+
+
+
+}
+html {
+    background: #cbff54;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+#display-container {
+    background: linear-gradient(110deg, #fffc90 60%, #ffff77 60%);
+
+}
+
+.header {
+    font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.6em;
+    border-bottom: 0.1em solid #c0bfd2;
+}
+
+#next-button,
+#restart{
+    font-size: 1em;
+    margin-top: 1.5em;
+    background-color: #8754ff;
+    color: #ffffff;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.hide {
+    display: none;
+}
+
+.incorrect {
+    background-color: #ffdde0;
+    color: #d32f2f;
+    border-color: #d32f2f;
+}
+.correct {
+    background-color: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    font-size: 20px;
+    width: 1000px;
+    height: 100px;
+    margin-top: 100px;
+
+}
+

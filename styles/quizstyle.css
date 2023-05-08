@@ -1,0 +1,64 @@
+html, .main {
+    background: #cbff54;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+
+.main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+#card1 {
+    background: linear-gradient(110deg, #fffc90 60%, #ffff77 60%);
+
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    margin-top: 10px;
+    margin-right: 15px;
+
+}
+
+.header {
+    margin-bottom: 20px;
+}
+.header-2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-left: 20px;
+}
+
+.start-quiz {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startBtn {
+    margin-bottom: 50px;
+    background-color: #3970e0;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    transition: box-shadow 0.8s, width 1s, height 1s;
+}
+
+.startBtn:hover {
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+    width: 120px;
+    height: 70px;
+}

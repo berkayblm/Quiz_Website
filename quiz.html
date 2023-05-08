@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="styles/quizstyle.css">
+    <link rel="stylesheet" href="styles/quiz-test.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "main" id="main1">
+        <div class="card" id="card1">
+            <div class="header">
+                <h1 class="card-title">Choose Your Level</h1>
+            </div>
+
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="level-radio" id="level1" checked>
+                <label class="form-check-label" for="level1" style="font-size: 20px;">A1 - A2</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="level-radio" id="level2" checked>
+                <label class="form-check-label" for="level2" style="font-size: 20px;">B1 - B2</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="level-radio" id="level3" checked>
+                <label class="form-check-label" for="level3" style="font-size: 20px;">C1 - C2</label>
+            </div>
+
+            <div>
+
+                <div class="header-2">
+                    <h1 class="card-title">What Subject Do You Want to Study?</h1>
+                </div>
+
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="subject-radio" id="allWords">
+                        <label class="form-check-label" for="allWords" style="font-size: 20px">All Words</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="subject-radio" id="phrasalverbs" checked>
+                        <label class="form-check-label" for="phrasalverbs" style="font-size: 20px">Phrasal Verbs</label>
+                    </div>
+
+            </div>
+
+            <div class = "start-quiz">
+
+                <button onclick="displayValues()" class = "startBtn"> Start Quiz</button>
+
+            </div>
+
+            <div>
+               <div id="result"></div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="main2 hide" id="quiz-card">
+        <div class = "card"  style="
+             background: linear-gradient(110deg, #fffc90 60%, #ffff77 60%);">
+
+            <div id="display-container">
+                <div class = "header">
+
+                    <div class ="number-of-question">
+
+                        <span class="question-number-span">1 of 10 Questions</span>
+
+                    </div>
+
+                </div>
+
+                <div id = "container">
+                    <!-- questions and options will be displayed here -->
+
+                    <div>
+                        <a id="question-name"></a>
+                    </div>
+                    <div class="options">
+
+                        <button id="section-A" onclick="checkAnswer(this)">A.)</button>
+                        <button id="section-B" onclick="checkAnswer(this)">B.)</button>
+
+                        <button id="section-C" onclick="checkAnswer(this)">C.)</button>
+                        <button id="section-D" onclick="checkAnswer(this)">D.)</button>
+
+
+                    </div>
+
+                </div>
+
+                <button  id="next-button">Next</button>
+            </div>
+
+            <div class="score-container hide">
+
+                <div id="user-score">Score</div>
+                <button id="restart">Restart</button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+<!--    <button onclick="saveData()">Save Data</button>-->
+<!--    <button onclick="readData()">Read Data</button>-->
+
+    <script src="index.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth-compat.js"></script>
+    <script src="db-config.js"></script>
+    <script src="A1_words.js"></script>
+    <script src="B1_words.js"></script>
+    <script src="words.js"></script>
+
+
+
+</body>
+
+</html>

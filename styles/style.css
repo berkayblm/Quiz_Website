@@ -1,0 +1,102 @@
+
+.card {
+    font-family: 'Bruno Ace SC', cursive;
+}
+body {
+    margin-top: 100px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: -webkit-repeating-linear-gradient(#fffc90,yellow);
+
+
+}
+
+.card-title {
+    padding-bottom: 100px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-style: italic;
+
+
+}
+
+.bg-primary {
+    background: linear-gradient(110deg, #fffc90 60%, #ffff77 60%);
+}
+
+#loginbtn,
+#signupbtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #3970e0;
+    font-size: 15px;
+
+
+    transition: box-shadow 1s,width 1s, height 2s;
+
+}
+#signupbtn {
+    margin-right: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#loginbtn {
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+
+#signupbtn:hover {
+
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+    width: 110px;
+    height: 50px;
+    background-color: #90b4ff;
+
+}
+#loginbtn:hover {
+
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+    width: 110px;
+    height: 50px;
+    background-color: #90b4ff;
+}
+
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#email,
+#password {
+    margin-bottom: 15px;
+    margin-right:20px;
+    margin-left:20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 40px;
+    background: #f8ffc2;
+}
+
+#email {
+    margin-bottom: 10px;
+
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+
+
+}
