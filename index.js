@@ -39,7 +39,7 @@ const optionB = document.getElementById("section-B");
 const optionC = document.getElementById("section-C");
 const optionD = document.getElementById("section-D");
 const questionName = document.getElementById("question-name");
-const currentQuestionNm = document.getElementsByClassName("question-number-span");
+const currentQuestionSpan = document.getElementById("question-number-span");
 const userScore = document.getElementById("user-score");
 const restartButton = document.getElementById("restart");
 const main1Div = document.getElementById("main1")
@@ -84,13 +84,14 @@ const displayValues = () => {
 
     getRandomWords();
 
+    main1Div.classList.add("hide")
+    main2Div.classList.remove("hide")
 
     questions = randomQuestions;
     console.log("SA" + randomQuestions)
     displayQuestion();
-    main2Div.classList.remove("hide")
 
-    main1Div.classList.add("hide")
+
 
 
 
@@ -151,7 +152,7 @@ function getRandomWords() {
             randomQuestions.push(element.data())
         }
 
-        console.log(randomNumbersArray)
+        console.log(randomQuestions)
 
 
     }).catch((error) => {
@@ -176,11 +177,13 @@ nextButton.addEventListener("click", () => {
 
     }
 
-    else {
 
+    else {
+        container.classList.remove("hide")
+        nextButton.innerText = "Next"
         // current question number
-        document.querySelector(".question-number-span").innerHTML =
-            `<span>${currentQuestionNo} of 10 Questions</span>`
+        currentQuestionSpan.innerHTML =
+            `<span>${currentQuestionNo - 1} of 10 Questions</span>`
 
         // show score and restart btns
         enableButtons()
@@ -193,6 +196,13 @@ let currentQuestion;
 let currentQuestionAnswer;
 //displayQuestion() // call when it is the first question
 function displayQuestion() {
+
+    if (currentQuestionNo == 1) {
+        container.classList.add("hide");
+        currentQuestionSpan.innerText = "";
+        nextButton.innerText = "Ready"
+
+    }
 
     console.log("QQWEQEWQ"  +  questions.length)
     currentQuestion = questions[currentQuestionNo - 1].eng_name;
@@ -282,7 +292,9 @@ function calculateScore(correctFlag) {
 
 }
 
-
+restartButton.addEventListener("click", () => {
+    location.reload();
+})
 
 
 
