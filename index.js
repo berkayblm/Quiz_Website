@@ -1,26 +1,4 @@
 
-
-/*
-const saveData = () => {
-
-    for (let i = 0; i < words_B1.length; i++) {
-
-        db.collection("words_B1")
-            .add(
-                words_B1[i]
-            ).then((docRef) => {
-            console.log("Document written with ID: ", docRef.id)
-        })
-            .catch((error) => {
-                console.error("Error adding document: ", error)
-            })
-    }
-
-}
-saveData()*/
-
-//TODO: add counter
-
 const levelRadios = document.getElementsByName('level-radio');
 const subjectRadios = document.getElementsByName('subject-radio');
 const result = document.getElementById("result");
@@ -49,10 +27,8 @@ const main2Div = document.getElementById("quiz-card");
 let resultArray = [];
 resultArray[0] = selectedLevel
 resultArray[1] = selectedSubject
-
 let questions = []
 let randomQuestions = []
-console.log(questions)
 let currentQuestionNo = 1
 
 const displayValues = () => {
@@ -88,19 +64,11 @@ const displayValues = () => {
     main2Div.classList.remove("hide")
 
     questions = randomQuestions;
-    console.log("SA" + randomQuestions)
+
     displayQuestion();
 
 
-
-
-
-
-    //document.querySelector(".countdownDiv").classList.remove("hide")
-
 }
-
-
 
 
 
@@ -109,7 +77,6 @@ function getRandomWords() {
     let collectionName = resultArray[1];
     let collectionLevel = resultArray[0];
 
-    //TODO: collection type will be typed out after user selects a level
 
     let dbName = "phrasal_verbs"; // default
 
@@ -146,13 +113,12 @@ function getRandomWords() {
 
             randomNumbersArray.push(randomDoc)
         }
-        console.log(dbName)
+
         for (let element of randomNumbersArray) {
             console.log(element.data())
             randomQuestions.push(element.data())
         }
 
-        console.log(randomQuestions)
 
 
     }).catch((error) => {
@@ -192,9 +158,10 @@ nextButton.addEventListener("click", () => {
 
 
 })
+
 let currentQuestion;
 let currentQuestionAnswer;
-//displayQuestion() // call when it is the first question
+
 function displayQuestion() {
 
     if (currentQuestionNo == 1) {
@@ -204,7 +171,6 @@ function displayQuestion() {
 
     }
 
-    console.log("QQWEQEWQ"  +  questions.length)
     currentQuestion = questions[currentQuestionNo - 1].eng_name;
     currentQuestionAnswer = questions[currentQuestionNo - 1].tr_name;
     questionName.innerHTML = currentQuestion;
@@ -238,8 +204,6 @@ function displayQuestion() {
     optionB.innerText = questions[shuffledArray[1]].tr_name;
     optionC.innerText = questions[shuffledArray[2]].tr_name;
     optionD.innerText = questions[shuffledArray[3]].tr_name;
-    console.log(questIndexes)
-    console.log(randomNumberArray)
 
 }
 
@@ -295,39 +259,3 @@ function calculateScore(correctFlag) {
 restartButton.addEventListener("click", () => {
     location.reload();
 })
-
-
-
-/*
-const readData = () => {
-    db.collection("words_ALL")
-        .get()
-        .then((data) => {
-            console.log(data.docs.map((item) => {
-                return {...item.data()}
-            }))
-        })
-}
-
-*/
-
-/*
-const updateData = () => {
-    db.collection("users").doc('7mtNLcMPQcrqN78k0i7k')
-        .update( {
-            email: 'fatihterim@gamil.com',
-            password:"terim3"
-        })
-}*/
-
-/*
-const deleteData = () => {
-    db.collection("users").doc('7mtNLcMPQcrqN78k0i7k').delete()
-        .then(() => {
-            alert("Data Deleted")
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-}
-*/

@@ -12,6 +12,7 @@ html, .main {
     flex-direction: column;
 
 
+
 }
 #card1 {
     background: linear-gradient(110deg, #fffc90 60%, #ffff77 60%);
