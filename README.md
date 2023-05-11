@@ -10,7 +10,7 @@ An English quiz website where you can test your skills with dozens of different 
 ![image](https://github.com/berkayblm/Quiz_Website/assets/73589879/8d4e86d3-8f33-4d92-92bd-bb1f1a77eda5)
 Choose your level and the subject you want to practise. Hit the Start!
 ## Test Page
-![image](https://github.com/berkayblm.github.io/Quiz_Website/assets/73589879/2d5fcb93-c6e4-434d-9e95-39a2ff12bd1b)
+![image](https://github.com/berkayblm/Quiz_Website/assets/73589879/2d5fcb93-c6e4-434d-9e95-39a2ff12bd1b)
 ![image](https://github.com/berkayblm/Quiz_Website/assets/73589879/4d6710d5-3dd6-4c36-867b-3c341dc1ee0e)
 ![image](https://github.com/berkayblm/Quiz_Website/assets/73589879/c6043f6c-e4fc-42c9-9560-7435b568a37f)
 
