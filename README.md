@@ -23,4 +23,4 @@ Choose your level and the subject you want to practise. Hit the Start!
 
 ##
 ##
-## Don't Forget to Give A Star
+## Don't Forget to Give A Star!!!
