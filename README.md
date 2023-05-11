@@ -3,6 +3,7 @@
 An English quiz website where you can test your skills with dozens of different words. Choose your level and give that a go!
 
 ## An Outlook to Website
+![image](https://github.com/berkayblm/Quiz_Website/assets/73589879/727d00eb-957d-4e54-be15-d07f51fd4135)
 
 ## Login Page
 ![image](https://github.com/berkayblm/Quiz_Website/assets/73589879/fb8d624f-1a7c-4e19-8639-8ec0ec199384)
